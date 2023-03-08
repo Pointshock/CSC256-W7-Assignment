@@ -1,0 +1,12 @@
+/* Stylesheet - Chris Tomaskovic */
+body{
+    background-color: grey;
+}
+
+.centered{
+    text-align: center;
+}
+
+button{
+    background-color: aquamarine;
+}

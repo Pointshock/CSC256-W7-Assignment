@@ -1,0 +1,48 @@
+<!--Form Assignment created by Chris Tomaskovic-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Game Elements</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--This is the main form body-->
+    <form>
+        <h2>Enter your characters stats</h2>
+
+        <label for="username">UserName:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="weapon">Weapon:</label><br>
+        <input type="text" id="weapon" name="weapon"><br>
+
+        <label for="health">Health:</label><br>
+        <input type="text" id="health" name="health"><br>
+
+        <label for="damage">Damage:</label><br>
+        <input type="text" id="damage" name="damage"><br>
+
+        <label for="points">Point Total:</label><br>
+        <input type="text" id="points" name="points"><br>
+
+        <br>
+        <!--A button to click once the form has been filled out that call the JavaScript function-->
+        <button type="button" onclick="submitForm();">Submit Form</button>
+    </form>
+
+    <!--This is the div that will hold the users stats-->
+    <div id="userInfo" style="display: none;">
+        <h2>Here is your characters stats: </h2>
+        <br>
+        <label for="usersName">UserName: </label><div id="usersName"></div>
+        <label for="usersWeapon">Weapon: </label><div id="usersWeapon"></div>
+        <label for="usersHealth">Health: </label><div id="usersHealth"></div>
+        <label for="usersDamage">Damage: </label><div id="usersDamage"></div>
+        <label for="usersPoints">Point Total: </label><div id="usersPoints"></div>
+    </div>
+</body>
+</html>
